@@ -44,6 +44,7 @@ if [ -n "$SERVER_SERVER_LANGUAGE" ]; then jq '.ServerLanguage = $val' --arg val 
 if [ -n "$SERVER_PVP" ]; then jq '.AllowPvP = $val' --arg val "$SERVER_PVP" $serverconfig | sponge $serverconfig ; fi
 if [ -n "$SERVER_FIRE_SPREAD" ]; then jq '.AllowFireSpread = $val' --arg val "$SERVER_FIRE_SPREAD" $serverconfig | sponge $serverconfig ; fi
 if [ -n "$SERVER_WORLD_SEED" ]; then jq '.WorldConfig.Seed = $val' --arg val "$SERVER_WORLD_SEED" $serverconfig | sponge $serverconfig ; fi
+if [ -n "$SERVER_STARTUP_COMMANDS" ]; then jq '.StartupCommands = $val' --arg val "$SERVER_STARTUP_COMMANDS" $serverconfig | sponge $serverconfig ; fi
 
 # Apply World Configuration
 if [ -n "$WORLDCONFIG_WORLD_CLIMATE" ]; then jq '.WorldConfig.WorldConfiguration.worldClimate = $val' --arg val "$WORLDCONFIG_WORLD_CLIMATE" $serverconfig | sponge $serverconfig ; fi

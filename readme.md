@@ -6,7 +6,7 @@
 
 ## Environment varibles
 
-### Vintage Story 
+### Vintage Story
 
 #### Server configuration
 
@@ -24,6 +24,7 @@
 - **SERVER_PVP** Allow PvP (default: true)
 - **SERVER_FIRE_SPREAD** Allow fire spread (default: true)
 - **SERVER_WORLD_SEED** World seed
+- **SERVER_STARTUP_COMMANDS** Commands to execute on server startup
 
 <details>
     <summary>World Configuration Variables</summary>
@@ -79,7 +80,8 @@
 - **WORLDCONFIG_ALLOW_LAND_CLAIMING** [true|false] (default: true)
 - **WORLDCONFIG_CLASS_EXCLUSIVE_RECIPES** [true|false] (default: true)
 - **WORLDCONFIG_AUCTION_HOUSE** [true|false] (default: true)
-</details> 
+
+</details>
 
 ### System User
 
@@ -118,6 +120,6 @@ You need need `stdin_open` and `tty` to true in docker compose file.
 
 To interact with the console, you need to attach to the container, replace <container_name> with your container name.
 
-```docker attach <container_name>```
+``docker attach <container_name>``
 
 Use Control-p Control-q to detach.
