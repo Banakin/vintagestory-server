@@ -351,7 +351,7 @@
   "AllowFireSpread": true,
   "AllowFallingBlocks": true,
   "HostedMode": false,
-  "StartupCommands": "/player RayFoxyote whitelist on \n /op RayFoxyote",
+  "StartupCommands": "/op RayFoxyote \n /player RayFoxyote whitelist on",
   "RepairMode": false,
   "AnalyzeMode": false,
   "CorruptionProtection": true,
