@@ -24,6 +24,7 @@
 - **SERVER_PVP** Allow PvP (default: true)
 - **SERVER_FIRE_SPREAD** Allow fire spread (default: true)
 - **SERVER_WORLD_SEED** World seed
+- **SERVER_STARTUP_COMMANDS** Commands to execute on server startup
 
 <details>
     <summary>World Configuration Variables</summary>
